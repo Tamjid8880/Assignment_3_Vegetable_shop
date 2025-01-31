@@ -35,6 +35,7 @@
 </head>
 
 <body class="sora-unique bg-gradient-to-b from-white to-[#EFEBE3]">
+    <!-- navbar -->
     <header class="px-20 py-5 mx-0">
         <nav>
             <div class="navbar bg-base-100">
@@ -61,17 +62,17 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Product</a></li>
-                        <li><a>Service</a></li>
-                        <li><a>Contact us</a></li>
+                        <li class="text-xl"><a>Product</a></li>
+                        <li class="text-xl"><a>Service</a></li>
+                        <li class="text-xl"><a>Contact us</a></li>
                     </ul>
                 </div>
 
                 <div class="navbar-end gap-5">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a class="btn">login</a>
-                    <a class="btn">Register</a>
+                    <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                    <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                    <a class="btn bg-white border-green-500">login</a>
+                    <a class="btn bg-green-600 text-white">Register</a>
                 </div>
             </div>
         </nav>
@@ -88,12 +89,15 @@
     </header>
 
     <!-- service-card -->
-    <section class="px-20 py-5 mx-0 bg-white">
+    <section class="px-20 py-5 mx-0 bg-white pb-24 pt-24">
         <h3 class="text-3xl text-font-color ml-44 pb-5">Services</h3>
         <div class="flex justify-center gap-6">
             <div class="card bg-base-100 w-96 shadow-xl bg-card-bg">
                 <figure class="px-10 pt-10">
-                    <img src="c2-assets/service.png" alt="Shoes" class="rounded-xl" />
+                    <div class="bg-white rounded-full p-5">
+                        <img src="c2-assets/service.png" alt="Shoes" class="rounded-xl" />
+                    </div>
+
                 </figure>
                 <div class="card-body items-center text-center">
                     <h2 class="card-title">24/7 Services </h2>
@@ -102,8 +106,11 @@
                 </div>
             </div>
             <div class="card bg-base-100 w-96 shadow-xl bg-card-bg">
-                <figure class="px-10 pt-10 w-full ">
-                    <img src="c2-assets/delivery.png" alt="Shoes" class="rounded-xl" />
+                <figure class="px-10 pt-10 ">
+                    <div class="bg-white rounded-full p-5">
+                        <img src="c2-assets/delivery.png" alt="Shoes" class="rounded-xl" />
+                    </div>
+
                 </figure>
                 <div class="card-body items-center text-center">
                     <h2 class="card-title">Fast Delivery</h2>
@@ -113,7 +120,10 @@
             </div>
             <div class="card bg-base-100 w-96 shadow-xl bg-card-bg">
                 <figure class="px-10 pt-10 ">
-                    <img src="c2-assets/healthy.png" alt="Shoes" class="rounded-xl" />
+                    <div class="bg-white rounded-full p-5">
+                        <img src="c2-assets/healthy.png" alt="Shoes" class="rounded-xl" />
+                    </div>
+
                 </figure>
                 <div class="card-body items-center text-center">
                     <h2 class="card-title">Healthy Products </h2>
@@ -274,9 +284,9 @@
 
     <!-- grocery-news -->
     <section>
-        <div class="px-20 py-5 mx-0 bg-white">
+        <div class="px-20 py-5 mx-0 bg-white -mb-20">
             <div class="hero ">
-                <div class="hero-content flex-col lg:flex-row bg-[#EFEBE3] rounded-xl p-10">
+                <div class="hero-content flex-col lg:flex-row bg-[#EFEBE3] rounded-xl p-10 gap-x-24">
                     <img src="c2-assets/vegetable-busket.png" class="max-w-sm rounded-lg " />
                     <div>
                         <h1 class="text-5xl font-bold">Get Grocery News!</h1>
@@ -297,27 +307,29 @@
 
     <!-- footer -->
 
-    <footer class="px-20 py-5 mx-0 bg-green-600">
+    <footer class="px-20 py-5 mx-0 bg-green-600 pt-20">
         <footer class="footer  text-white p-10">
-            <nav>
-                <h6 class="footer-title">Services</h6>
-                <a class="link link-hover">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
+            <nav class="w-1/3">
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </nav>
+            <nav class="w-1/3">
+                <h6 class="footer-title">Product</h6>
+                <a class="link link-hover">Service</a>
+                <a class="link link-hover">Contact Us</a>
+
             </nav>
             <nav>
-                <h6 class="footer-title">Company</h6>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-                <a class="link link-hover">Press kit</a>
-            </nav>
-            <nav>
-                <h6 class="footer-title">Legal</h6>
-                <a class="link link-hover">Terms of use</a>
-                <a class="link link-hover">Privacy policy</a>
-                <a class="link link-hover">Cookie policy</a>
+
+                <h6 class="footer-title pb-4">Follow us</h6>
+                <div class="flex gap-4">
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                    <i class="fa-brands fa-youtube fa-xl"></i>
+                </div>
+
+
             </nav>
         </footer>
     </footer>
