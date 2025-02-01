@@ -17,6 +17,22 @@
             font-family: "Sora", serif;
             font-optical-sizing: auto;
         }
+        
+        @keyframes moveX {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(100px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-moveX {
+            animation: moveX 5s linear infinite;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -93,6 +109,15 @@
         </section>
 
     </header>
+
+    <div class="flex justify-center">
+        <img src="c2-assets/animation.png" class="w-32 h-32 animate-moveX">
+        <img src="c2-assets/animation.png" class="w-32 h-32 animate-moveX">
+        <img src="c2-assets/animation.png" class="w-32 h-32 animate-moveX">
+        <img src="c2-assets/animation.png" class="w-32 h-32 animate-moveX">
+
+        <img src="c2-assets/animation.png" class="w-32 h-32 animate-moveX">
+    </div>
 
     <!-- service-card -->
     <section class="px-20 py-5 mx-0 bg-white pb-24 pt-24">
